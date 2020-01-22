@@ -33,7 +33,7 @@ def hh_parse(url, headers):
             })
         print(jobs)
     else:
-        print("Error")
+        print("ERROR")
 
 
 hh_parse(url, headers)
