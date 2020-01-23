@@ -1,4 +1,3 @@
-
 import csv
 import requests  # Можно использовать для отправки всех видов HTTP-запросов.
 from bs4 import BeautifulSoup as bs  # Модуль для парсинга

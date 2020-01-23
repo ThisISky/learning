@@ -1,0 +1,11 @@
+import tkinter as tk
+root = tk.Tk()
+c = tk.Canvas(width=600, height=400)
+c.pack()
+bg = tk.PhotoImage(file="postthumb-3-600x400.gif")
+c.create_image(300, 200, image=bg)
+lab = c.create_text(40, 10, text="Some Text...", fill="Black")
+#c.coords(lab, 100, 100)
+#d=tk.Button(text="Click")
+#d.place(x= 90, y = 5)
+root.mainloop()
