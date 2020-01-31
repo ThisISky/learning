@@ -1,11 +1,18 @@
-import tkinter as tk
-root = tk.Tk()
-c = tk.Canvas(width=600, height=400)
-c.pack()
-bg = tk.PhotoImage(file="postthumb-3-600x400.gif")
-c.create_image(300, 200, image=bg)
-lab = c.create_text(40, 10, text="Some Text...", fill="Black")
-#c.coords(lab, 100, 100)
-#d=tk.Button(text="Click")
-#d.place(x= 90, y = 5)
-root.mainloop()
+# a = map(int, input().split())
+
+from random import randint
+
+state01 = 1
+state02 = 2
+state03 = 4
+state04 = 5
+
+win_coef01 = int(100 + randint(1, 30 + state01 * 60)) // 100
+win_coef02 = int(100 + randint(1, 30 + state02 * 60)) // 100
+win_coef03 = int(100 + randint(1, 30 + state03 * 60)) // 100
+win_coef04 = int(100 + randint(1, 30 + state04 * 60)) // 100
+
+print(f'''{win_coef01}
+{win_coef02}
+{win_coef03}
+{win_coef04}''')
